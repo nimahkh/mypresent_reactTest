@@ -1,5 +1,5 @@
 import React from "react";
-
+import PropTypes from 'prop-types';
 
 export const DummyComponent = (props) => {
     const data=props.data;
@@ -16,3 +16,15 @@ export const DummyComponent = (props) => {
         </React.Fragment>
     )
 }
+
+DummyComponent.propTypes = {
+    data: PropTypes.arrayOf(PropTypes.shape({
+        id: PropTypes.number,
+        message: PropTypes.string,
+        author: PropTypes.shape({
+            name: PropTypes.string,
+            family: PropTypes.string
+        })
+    })
+    )
+};
