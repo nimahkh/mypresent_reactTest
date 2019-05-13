@@ -47,7 +47,7 @@ export const SlideFifth = (props) => {
                     </li>
                 </ul>
 
-                <div style={props.slide}>{"Test list below"}</div>
+                <div style={props.slide}>{"Test list"}</div>
 
                 <DummyComponent data={dummyData}/>
 
