@@ -3,6 +3,7 @@ import {SlideOne} from "./Components/SlideOne";
 import {SlideTwo} from "./Components/SlideTwo";
 import {SlideThree} from "./Components/SlideThree";
 import {SlideFour} from "./Components/SlideFour";
+import {SlideFifth} from "./Components/SlideFifth";
 
 const slide = {
 
@@ -119,22 +120,17 @@ export default [
             scale: 4
         },
         content: [
-            <SlideFour slide={slide.four}/>
+            <SlideFour/>
         ]
     },
     {
-        id: "its",
+        className: "slide",
         data: {
-            x: 850,
-            y: 3000,
-            rotateZ: 90,
-            scale: 5
+            x: 2000,
+            y: -1500
         },
         content: [
-            <p>It’s a <strong>presentation tool</strong> <br/>
-                inspired by the idea behind <a href="http://prezi.com" target="_blank" rel="nofollow">prezi.com</a>
-                <br/>
-                and based on the <strong>power of CSS3 transforms and transitions</strong> in modern browsers.</p>
+            <SlideFifth slide={slide.three}/>
         ]
     },
     {
