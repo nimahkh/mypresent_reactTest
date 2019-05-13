@@ -5,8 +5,8 @@ export const DummyComponent = (props) => {
     const data=props.data;
     return (
         <React.Fragment>
-            {data.map(item => (
-                <div style={{textAlign:'left',borderBottom:'1px solid #ccc',fontSize:16}} key={item.id}>
+            {data!==undefined && data.map(item => (
+                <div className={"authors"} style={{textAlign:'left',borderBottom:'1px solid #ccc',fontSize:16}} key={item.id}>
                     author: {item.author.name} {item.author.family}
                     <div>
                         {item.message}
