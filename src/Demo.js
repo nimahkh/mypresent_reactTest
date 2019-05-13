@@ -4,6 +4,7 @@ import {SlideTwo} from "./Components/SlideTwo";
 import {SlideThree} from "./Components/SlideThree";
 import {SlideFour} from "./Components/SlideFour";
 import {SlideFifth} from "./Components/SlideFifth";
+import {SlideSixth} from "./Components/SlideSixth";
 
 const slide = {
 
@@ -131,6 +132,27 @@ export default [
         },
         content: [
             <SlideFifth slide={slide.three}/>
+        ]
+    },
+    {
+        className: "slide",
+        data: {
+            x: 3000,
+            y: -1500
+        },
+        content: [
+            <SlideSixth slide={slide.three}/>
+        ]
+    },
+    {
+        data: {
+            x: 4000,
+            y: 2000,
+            rotateZ: 90,
+            scale: 4
+        },
+        content: [
+            <h1 style={{color:'#fff'}}>Lets do it</h1>
         ]
     },
 ];
